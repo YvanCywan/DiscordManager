@@ -3,7 +3,7 @@
 **Original script by FAXES**
 
 **About**
-After a one galaxy brained moment, I realised that I can provide
+After a one galaxy brained moment, I realised that I can provide a banning system for my new server which relies on a discord tag being applied and removed after a timer, hence this was created.
 
 <hr>
 
