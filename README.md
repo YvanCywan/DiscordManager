@@ -11,6 +11,11 @@ After a one galaxy brained moment, I realised that I can provide a banning syste
 - Discord white-list based on users Discord roles
 - Discord rejects connection from blacklisted discord roles
 
+**Possibly Upcoming**
+
+ - Introduce a system in which players can be kicked from the server live from discord commands and banning.
+ 
+
 **Requirements**
 @IllusiveTea's [Discord Role For Permission Script](https://forum.fivem.net/t/discord-roles-for-permissions-im-creative-i-know/233805) - **Ensure that it is the one from the master branch!**
 
