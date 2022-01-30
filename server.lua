@@ -34,11 +34,11 @@ AddEventHandler("playerConnecting", function(name, setCallback, deferrals)
         for index, valueReq in ipairs (blacklistRole) do
           if has_value(usersRoles, valueReq) then
             passAuth = false
+            deferrals.done(bannedMessage)
           else
             for index, valueReq in ipairs (whitelistRoles) do
               if has_value(usersRoles, valueReq) then
                 passAuth = true
-              end
               if next(whitelistRoles, index) == nil then
                 if passAuth == true then
                   deferrals.done()
@@ -47,14 +47,9 @@ AddEventHandler("playerConnecting", function(name, setCallback, deferrals)
                 end
               end
             end
-            if next(blacklistRole, index) == nil then
-              if passAuth == false then
-                deferrals.done(bannedMessage)
-              end
-            end
           end
         end
-      else
-        deferrals.done("Discord was not detected. Please make sure Discord is running and installed.")
-      end
+        else
+           deferrals.done("Discord was not detected. Please make sure Discord is running and installed.")
+        end
     end)
